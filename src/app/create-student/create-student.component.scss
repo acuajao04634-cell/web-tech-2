@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #063479;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c2c2c;
+}
+
+/* Header */
+.page-header {
+  padding: 16px;
+  background: #fff2f2;
+  border-radius: 10px;
+  margin: 16px auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+/* Layout */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Panel */
+.panel {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+/* Compact form */
+label {
+  display: block;
+  font-size: 14px;
+  margin: 8px 0;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #d6d6d6;
+}
+
+.btn.primary {
+  background: #4f8cff;
+  color: white;
+}
