@@ -1,24 +1,23 @@
 :host {
   display: block;
-  height: 100vh;
-  background: #0f172a; /* dark navy */
+  min-height: 100vh;
+  background: #5f6980;
   color: #e5e7eb;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
+  padding-bottom: 40px;
 }
 
-/* Header */
+/* ================= HEADER ================= */
+
 .page-header {
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 30px auto 20px;
   padding: 20px 24px;
-  background: #111827;
+  background: #5f6980;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
-
+z
 .header-title {
   margin: 0;
   font-size: 32px;
@@ -26,73 +25,90 @@
   color: #f9fafb;
 }
 
-/* Layout */
+/* ================= LAYOUT ================= */
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 16px;
 }
 
-/* Panel */
+
+
 .panel {
-  background: #020617;
+  background: #8596e5;
   border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(180, 158, 231, 0.5);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .panel-title {
-  margin-bottom: 16px;
+  margin: 0;
   font-size: 22px;
   font-weight: 800;
   color: #c7d2fe;
 }
 
-/* Cards */
+
+
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 14px; /* replaces margin-bottom */
+  gap: 16px;
 }
 
-/* Student Card */
 .card {
-  background: #020617;
+  background: #363a42;
   border: 1px solid #1e293b;
   border-radius: 14px;
   padding: 18px 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  transition: background 0.2s ease, transform 0.2s ease;
+  align-items: center;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .card:hover {
-  background: #020617;
-  transform: translateY(-2px);
+  background: #111827;
+  transform: translateY(-3px);
 }
 
 .student-name {
   margin: 0 0 6px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 800;
   color: #f9fafb;
 }
 
 .meta {
-  margin: 2px 0;
-  font-size: 15px;
+  margin: 0;
+  font-size: 14px;
   color: #9ca3af;
 }
 
-/* Buttons */
+.empty {
+  text-align: center;
+  color: #64748b;
+  padding: 30px 0;
+}
+
+
+
 .btn {
   border: none;
   border-radius: 10px;
   padding: 10px 18px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .btn.primary {

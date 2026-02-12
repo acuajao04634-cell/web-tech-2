@@ -3,49 +3,43 @@
 </header>
 
 <main class="container">
-  <section class="panel">
-    <form (ngSubmit)="createStudent()">
-      <div class="form-grid">
-        <label>
-          Student ID
-          <input [(ngModel)]="form.studentId" name="studentId" />
-        </label>
+  <section class="panel" [formGroup]="form">
 
-        <label>
-          Email
-          <input [(ngModel)]="form.email" name="email" type="email" />
-        </label>
+    <label>First Name</label>
+    <input type="text" formControlName="first_name">
 
-        <label>
-          First Name
-          <input [(ngModel)]="form.firstName" name="firstName" />
-        </label>
+    <label>Last Name</label>
+    <input type="text" formControlName="last_name">
 
-        <label>
-          Age
-          <input [(ngModel)]="form.age" name="age" type="number" />
-        </label>
+    <label>Email</label>
+    <input type="email" formControlName="email">
 
-        <label>
-          Last Name
-          <input [(ngModel)]="form.lastName" name="lastName" />
-        </label>
+    <label>Age</label>
+    <input type="number" formControlName="age">
 
-        <label>
-          GPA
-          <input [(ngModel)]="form.gpa" name="gpa" />
-        </label>
+    <label>Course</label>
+    <input type="text" formControlName="course">
 
-        <label class="span-2">
-          Enrollment Status
-          <input [(ngModel)]="form.status" name="status" />
-        </label>
-      </div>
+    <label>Year Level</label>
+    <input type="number" formControlName="year_level">
 
-      <div class="actions">
-        <button type="button" class="btn" (click)="back()">Back</button>
-        <button type="submit" class="btn primary">Create student</button>
-      </div>
-    </form>
+    <label>GPA</label>
+    <input type="number" step="0.01" formControlName="gpa">
+
+    <label>Enrollment Status</label>
+    <select formControlName="enrollment_status">
+      <option value="">Select status</option>
+      <option value="Enrolled">Enrolled</option>
+      <option value="Not Enrolled">Not Enrolled</option>
+      <option value="Graduated">Graduated</option>
+    </select>
+
+    <div class="actions">
+      <button class="btn" type="button" (click)="back()">Back</button>
+      <button class="btn primary" type="button" (click)="createStudent()">
+        Add Student
+      </button>
+    </div>
+
   </section>
 </main>
